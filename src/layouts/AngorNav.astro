@@ -4,7 +4,7 @@ import Logo from "../assets/images/logo.svg";
 ---
 
 <nav
-  class="bg-angorPrimary w-full h-24 flex items-center fixed top-0 left-0 px-16 z-10"
+  class="bg-angorPrimary w-full h-24 flex items-center fixed top-0 left-0 sm:px-16 px-5 z-50"
 >
   <div class="flex items-center gap-3">
     <div
@@ -12,10 +12,12 @@ import Logo from "../assets/images/logo.svg";
     >
       <img src={Logo.src} width="36.97" height="36.97" />
     </div>
-    <p class="text-white font-bold text-2xl">ANGOR</p>
+    <p class="text-white font-bold text-2xl hidden sm:block">ANGOR</p>
   </div>
   <!-- <AngorLogo/> -->
-  <h2 class="text-4xl flex-1 text-center font-bold text-white font-Inter mr-28">
+  <h2
+    class="text-4xl flex-1 text-center font-bold text-white font-Inter mr-28 hidden sm:block"
+  >
     How Angor works
   </h2>
 </nav>

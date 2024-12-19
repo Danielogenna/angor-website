@@ -1,10 +1,10 @@
 import React from "react";
 
-const LongArrow = ({ color, id }) => {
+const LongArrow = ({ color, id, width }) => {
   return (
     <svg
       id={id}
-      width="331"
+      width={width}
       height="27"
       viewBox="0 0 331 27"
       fill="none"

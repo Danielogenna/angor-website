@@ -3,15 +3,12 @@ import NewLayout from "../../../layouts/NewLayout.astro";
 import arrowLeft from "../../../assets/images/arrow-left.png";
 import TextChevronSec from "../../../components/TextChevronSec";
 import LongArrow from "../../../assets/icons/LongArrow";
+import BackButton from "../../../components/BackButton";
 ---
 
 <NewLayout title="How Angor Works">
   <div class="flex mt-36 justify-between px-16 font-sans">
-    <button
-      class="w-16 h-12 rounded-md flex justify-center bg-angorPrimary items-center"
-    >
-      <img src={arrowLeft.src} width="36" height="36" />
-    </button>
+    <BackButton client:load />
 
     <div class="mx-auto">
       <div class="max-w-6xl w-full">
